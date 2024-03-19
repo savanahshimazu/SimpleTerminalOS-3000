@@ -81,7 +81,6 @@ logout_prompt() {
     if [ $exit_status -eq 0 ]; then
         # User chose Yes
         echo "Goodbye!"
-        pkill -TERM -u $USER
         exit
     else
         # User chose No
