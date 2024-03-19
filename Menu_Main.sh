@@ -8,6 +8,7 @@ create_directories() {
             dialog --title "Creating Directory" --infobox "Creating $dir directory..." 5 50
             sudo mkdir "$dir"
             sudo cp -r ./STOS3000_updater.sh /Utility
+            sudo chmod +x 777 .
             dialog --title "Success" --msgbox "$dir directory created successfully." 10 30
         fi
     done
